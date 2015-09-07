@@ -325,7 +325,7 @@ class Text : Drawable, Transformable
 		float hspace = cast(float)(m_font.getGlyph(' ', m_characterSize, bold).advance);
 		float vspace = cast(float)(m_font.getLineSpacing(m_characterSize));
 		
-		Vector2f position;
+		Vector2f position = Vector2f(0,0);
 		dchar prevChar = 0;
 		for (size_t i = 0; i < index; ++i)
 		{
